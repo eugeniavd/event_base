@@ -1,0 +1,23 @@
+<h1>Add Your Event</h1>
+
+<%= form_with(model: @Event, url: events_path, local: true) do |form| %>
+  <div>
+    <%= form.label :Your_name %><br>
+    <%= form.text_field :Your_name %>
+  </div>
+  <div>
+    <%= form.label :Event_title %><br>
+    <%= form.text_field :Event_title %>
+  </div>
+  <div>
+    <%= form.label :Date %><br>
+    <%= form.date_field :Date %>
+  </div>
+  <div>
+    <%= form.label :Description %><br>
+    <%= form.text_area :Description %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
