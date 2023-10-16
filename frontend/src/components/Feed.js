@@ -15,10 +15,6 @@ const Feed = () => {
     }
   };
 
-  useEffect(() => {
-    getAtomFeed();
-  }, []);
-
   return (
     <div className="container">
       <div className="feedContainer">
